@@ -348,7 +348,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/amiguinhosdejesus.com\/wp
 
 .sales-notification {
 	position: fixed;
-	bottom: 20px;
+	top: 20px;
 	right: 20px;
 	background: #fff;
 	border-radius: 12px;
@@ -359,17 +359,17 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/amiguinhosdejesus.com\/wp
 	font-family: 'Nunito', sans-serif;
 	border-left: 4px solid #00d084;
 	display: none;
-	animation: slideInRight 0.4s ease-out, fadeOut 0.4s ease-in 4.6s;
+	animation: slideInDown 0.4s ease-out, fadeOut 0.4s ease-in 4.6s;
 	pointer-events: none;
 }
 
-@keyframes slideInRight {
+@keyframes slideInDown {
 	from {
-		transform: translateX(100%);
+		transform: translateY(-100%);
 		opacity: 0;
 	}
 	to {
-		transform: translateX(0);
+		transform: translateY(0);
 		opacity: 1;
 	}
 }
@@ -377,11 +377,11 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/amiguinhosdejesus.com\/wp
 @keyframes fadeOut {
 	from {
 		opacity: 1;
-		transform: translateX(0);
+		transform: translateY(0);
 	}
 	to {
 		opacity: 0;
-		transform: translateX(100%);
+		transform: translateY(-100%);
 	}
 }
 
@@ -420,7 +420,7 @@ var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/amiguinhosdejesus.com\/wp
 
 @media (max-width: 768px) {
 	.sales-notification {
-		bottom: 10px;
+		top: 10px;
 		right: 10px;
 		left: 10px;
 		max-width: none;
